@@ -17,8 +17,6 @@ I'm hosting another sketch on the same server, so the original one is not workin
 
 ##### Jan 27, 2018 
 
-**the following link is not working 
-
 [hosted here, please visit.](http://hellidea.com:8080/index.html)
 
 And please see source code and documentation in the folder named week_1.
