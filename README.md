@@ -1,6 +1,11 @@
 # DWD Course
 ### Week 1 Assignment
 
+##### Jan 31, 2018 update again:
+
+Yay! I figured out how to make them both working!
+
+
 ##### Jan 31, 2018 update:
 
 I'm hosting another sketch on the same server, so the original one is not working.
