@@ -1,0 +1,14 @@
+<%- include('header') -%>
+  <div id='ranks'></div>
+  <script>
+  var saved12 = <%- JSON.stringify(saved) %>;
+  for (var obj in saved12){
+    console.log(saved12[obj]);
+    let p = document.createElement('p');
+    p.innerHTML = saved12[obj].submissions;
+    document.getElementById('ranks').appendChild(p);
+  }
+</script>
+<script src="sketchOut.js"></script>
+
+<%- include('footer') -%>

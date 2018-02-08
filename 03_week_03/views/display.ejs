@@ -1,0 +1,14 @@
+<html>
+<body>
+  <div id="saved123"></div>
+  <script>
+    var saved12 = <%- JSON.stringify(saved) %>;
+    for (var obj in saved12){
+      console.log(saved12[obj]);
+      let p = document.createElement('p');
+      p.innerHTML = saved12[obj].submissions;
+      document.getElementById('saved123').appendChild(p);
+    }
+  </script>
+</body>
+</html>
