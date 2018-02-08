@@ -1,4 +1,12 @@
 # DWD Course
+
+### Week 2 Assignment
+
+[Hosted here](hellidea.com:8300)
+
+[Source code here](https://github.com/EonYang/dwdCourse/tree/master/02_week_02)
+
+
 ### Week 1 Assignment
 
 ##### Jan 31, 2018 update again:
