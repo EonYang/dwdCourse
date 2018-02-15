@@ -3,7 +3,6 @@
 let dogs = {};
 
 dogs = {
-<<<<<<< HEAD
   'zenMaster': {
     name: 'Zen Master',
     timeStart: 1517697837631,
@@ -23,23 +22,12 @@ topDogs = {
 // create basic objects
 let port = process.env.PORT || 3000;
 
-=======
-  'zenMaster':{
-    name : 'Zen Master',
-    timeStart : 1517697837631,
-  }
-}
-
-// create basic objects
-let port = process.env.PORT || 8300;
->>>>>>> 33373a6f7fa07fbc66beea29f7fc0f2b6a802acc
 let express = require('express');
 let app = express();
 let server = require('http').createServer(app).listen(port, function() {
   console.log('server is listening at port: ' + port);
 });
 
-<<<<<<< HEAD
 app.set('view engine', 'ejs');
 
 // app.listen(port, function() {
@@ -51,16 +39,10 @@ var config = require('./config.js');
 var db = mongojs(config.username + ':' + config.passsword + "@ds043350.mlab.com:43350/testdata01");
 
 
-=======
->>>>>>> 33373a6f7fa07fbc66beea29f7fc0f2b6a802acc
 app.use(express.static('public'));
 
 let io = require('socket.io').listen(server);
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 33373a6f7fa07fbc66beea29f7fc0f2b6a802acc
 var outputs = io.of('/');
 
 // what do outputs do
@@ -135,7 +117,6 @@ inputs.on('connection', function(socket) {
   })
 });
 
-<<<<<<< HEAD
 app.get('/', function(req, res) {
   db.top10.find({}, function(err, top10) {
     if (err || !top10) {
@@ -176,8 +157,6 @@ app.get('/', function(req, res) {
 // }
 
 
-=======
->>>>>>> 33373a6f7fa07fbc66beea29f7fc0f2b6a802acc
 //creat a new route for creating user
 //** the following code is an attemp, which is not working because
 //I could't get the socket if I'm not using socket.io
