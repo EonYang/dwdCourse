@@ -1,0 +1,28 @@
+{
+  "name": "zen_dog",
+  "version": "1.0.0",
+  "description": "Come and Meditate",
+  "main": "index.ejs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EonYang/dwdCourse.git"
+  },
+  "keywords": [
+    "zen",
+    "dog"
+  ],
+  "author": "yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EonYang/dwdCourse/issues"
+  },
+  "homepage": "https://github.com/EonYang/dwdCourse#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10",
+  },
+}

@@ -118,15 +118,19 @@ inputs.on('connection', function(socket) {
 });
 
 app.get('/', function(req, res) {
-  db.top10.find({}, function(err, top10) {
-    if (err || !top10) {
-      console.log('date didn\'t save');
-    } else {
-      console.log(top10);
-      res.render('index.ejs', {top10:top10});
-    }
-  })
-})
+  try {
+    db.top10.find({}, function(err, top10) {
+      if (err || !top10) {
+        console.log('date didn\'t save');
+      } else {
+        console.log(top10);
+        res.render('index.ejs', {top10:top10});
+      };
+    });
+  } catch (e) {
+    console.log(e);
+  } ;
+});
 
 
 // var StoreNewTopDog ()=> {
