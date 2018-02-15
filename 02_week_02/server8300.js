@@ -123,7 +123,7 @@ app.get('/', function(req, res) {
       if (err || !top10) {
         console.log('date didn\'t save');
       } else {
-        console.log(top10);
+        // console.log(top10);
         res.render('index.ejs', {top10:top10});
       };
     });
