@@ -1,12 +1,16 @@
 <%- include('header') -%>
-  <div id='ranks'></div>
+  <div id='ranksDiv'><br><br>
+    <ul id='ranks'>
+      </ul>
+  </div>
   <script>
-  var saved12 = <%- JSON.stringify(saved) %>;
-  for (var obj in saved12){
-    console.log(saved12[obj]);
-    let p = document.createElement('p');
-    p.innerHTML = saved12[obj].submissions;
-    document.getElementById('ranks').appendChild(p);
+  var top10 = <%- JSON.stringify(top10) %>;
+  for (var obj in top10){
+    console.log(top10[obj]);
+    let rank = document.createElement('li');
+    rank.innerHTML = top10[obj].name + ':' + top10[obj].duration;
+    document.getElementById('ranks').appendChild(rank);
+
   }
 </script>
 <script src="sketchOut.js"></script>

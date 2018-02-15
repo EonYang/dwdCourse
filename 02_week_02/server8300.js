@@ -118,21 +118,23 @@ inputs.on('connection', function(socket) {
 });
 
 app.get('/', function(req, res) {
-  db.top10.find({}, function(err, saved) {
-    if (err || !saved) {
+  db.top10.find({}, function(err, top10) {
+    if (err || !top10) {
       console.log('date didn\'t save');
     } else {
-      console.log(saved);
-      res.render('index.ejs', {saved:saved});
+      console.log(top10);
+      res.render('index.ejs', {top10:top10});
     }
   })
 })
 
-//
+
 // var StoreNewTopDog ()=> {
 //   let newtop;
+//
 //   // check user's time every 10 seconds
 //   for (let user in dogs) {
+//     let userDuration =
 //     newtop = {
 //        {id:'socketidaslkdjfjl',
 //         name: 'Zen Master',
